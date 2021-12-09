@@ -5,7 +5,7 @@
     class="flex-grow"
   ></app-movie-list-presentational>
   <div class="c-paginator">
-    <div class="c-paginator__spinner" *ngIf="loading$ | async">
+    <div class="c-paginator__spinner" *ngIf="loading$ | async" data-testid="spinner-wrapper">
       <mat-spinner [diameter]="32"></mat-spinner>
     </div>
     <mat-paginator

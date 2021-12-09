@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { byTestId, createComponentFactory, Spectator } from '@ngneat/spectator';
 import { MockModule } from 'ng-mocks';
 import { HeaderComponent } from './header.component';
+import { MatDividerModule } from '@angular/material/divider';
 
 describe('HeaderComponent', () => {
   let spectator: Spectator<HeaderComponent>;
@@ -13,6 +14,7 @@ describe('HeaderComponent', () => {
       MockModule(MatToolbarModule),
       MockModule(MatButtonModule),
       MockModule(MatIconModule),
+      MockModule(MatDividerModule),
     ],
   });
 

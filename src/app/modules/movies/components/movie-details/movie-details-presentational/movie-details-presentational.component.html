@@ -1,24 +1,24 @@
-<h1>{{ movie?.title }}</h1>
+<h1 data-testid="title">{{ movie?.title }}</h1>
 
 <div class="c-movie-details__fields">
   <div>
     <mat-form-field>
       <mat-label>Director</mat-label>
-      <input matInput readonly [value]="movie?.director" />
+      <input matInput readonly [value]="movie?.director" data-testid="director" />
     </mat-form-field>
   </div>
 
   <div>
     <mat-form-field>
       <mat-label>Producer</mat-label>
-      <input matInput readonly [value]="movie?.producer" />
+      <input matInput readonly [value]="movie?.producer" data-testid="producer" />
     </mat-form-field>
   </div>
 
   <div>
     <mat-form-field>
       <mat-label>Release date</mat-label>
-      <input matInput readonly [value]="movie?.release_date" />
+      <input matInput readonly [value]="movie?.release_date" data-testid="release" />
     </mat-form-field>
   </div>
 </div>
