@@ -1,0 +1,35 @@
+<mat-sidenav-container class="c-sidenav__container">
+  <mat-sidenav [autoFocus]="false" #snav class="c-sidenav__drawer">
+    <mat-nav-list>
+      <a
+        mat-list-item
+        class="c-sidenav__nav-item"
+        routerLink="/people"
+        routerLinkActive="c-sidenav__nav-item--active"
+        (click)="snav.close()"
+      >
+        <span class="c-sidenav__item-text">People</span>
+      </a>
+      <a
+        mat-list-item
+        class="c-sidenav__nav-item"
+        routerLink="/planets"
+        routerLinkActive="c-sidenav__nav-item--active"
+        (click)="snav.close()"
+        ><span class="c-sidenav__item-text">Planets</span></a
+      >
+      <a
+        mat-list-item
+        class="c-sidenav__nav-item"
+        routerLink="/movies"
+        routerLinkActive="c-sidenav__nav-item--active"
+        (click)="snav.close()"
+        ><span class="c-sidenav__item-text">Movies</span></a
+      >
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
