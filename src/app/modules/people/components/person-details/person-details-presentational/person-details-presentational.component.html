@@ -1,0 +1,45 @@
+<h1>{{ person?.name }}</h1>
+
+<div class="c-person-details__fields">
+  <div>
+    <mat-form-field>
+      <mat-label>Height</mat-label>
+      <input matInput readonly [value]="person?.height" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Mass</mat-label>
+      <input matInput readonly [value]="person?.mass" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Hair color</mat-label>
+      <input matInput readonly [value]="person?.hair_color" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Skin color</mat-label>
+      <input matInput readonly [value]="person?.skin_color" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Height</mat-label>
+      <input matInput readonly [value]="person?.gender" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Birth year</mat-label>
+      <input matInput readonly [value]="person?.birth_year" />
+    </mat-form-field>
+  </div>
+</div>

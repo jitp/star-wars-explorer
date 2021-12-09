@@ -1,0 +1,4 @@
+<mat-spinner [diameter]="32" *ngIf="loading$ | async"></mat-spinner>
+<app-person-details-presentational
+  [person]="person$ | async"
+></app-person-details-presentational>
