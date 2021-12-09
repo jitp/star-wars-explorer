@@ -1,12 +1,15 @@
 {
+  "homepage": "https://jitp.github.io/star-wars-explorer",
   "name": "star-wars-explorer",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:ci": "ng build --prod --sourceMap=false --base-href /star-wars-explorer/",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:ci": "ng test --browsers ChromeHeadless --watch=false --code-coverage --source-map true"
   },
   "private": true,
   "dependencies": {
