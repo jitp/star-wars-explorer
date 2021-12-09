@@ -21,6 +21,7 @@
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
     "@ngrx/component-store": "^12.5.1",
+    "bootstrap": "^4.6.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
@@ -30,6 +31,7 @@
     "@angular/cli": "~12.2.14",
     "@angular/compiler-cli": "~12.2.0",
     "@ngneat/spectator": "^8.3.2",
+    "@types/faker": "^5.5.9",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
     "faker": "^5.5.3",
