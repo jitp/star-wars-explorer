@@ -2,5 +2,32 @@
   <button mat-button (click)="menu.emit()" data-testid="menu-button">
     <i class="material-icons">menu</i>
   </button>
-  <a mat-button data-testid="title" href="/">{{ title }}</a>
+  <a mat-flat-button color="primary" data-testid="title" href="/">{{
+    title
+  }}</a>
+  <mat-divider></mat-divider>
+  <a
+    mat-flat-button
+    color="primary"
+    routerLink="/people"
+    class="d-none"
+    routerLinkActive="d-block"
+    >People</a
+  >
+  <a
+    mat-flat-button
+    color="primary"
+    routerLink="/planets"
+    class="d-none"
+    routerLinkActive="d-block"
+    >Planets</a
+  >
+  <a
+    mat-flat-button
+    color="primary"
+    routerLink="/movies"
+    class="d-none"
+    routerLinkActive="d-block"
+    >Movies</a
+  >
 </mat-toolbar>
