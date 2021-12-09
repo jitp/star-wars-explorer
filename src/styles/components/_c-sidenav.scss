@@ -1,0 +1,28 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+.c-sidenav {
+  &__container {
+    height: calc(100% - 64px);
+  }
+
+  &__drawer {
+    @include media-breakpoint-up(sm) {
+      min-width: 320px;
+    }
+  }
+
+  &__nav-item {
+    text-transform: uppercase;
+
+    &:hover,
+    &--active {
+      color: $white !important;
+    }
+  }
+
+  &__item-text {
+    display: block;
+    margin: 0 auto;
+  }
+}

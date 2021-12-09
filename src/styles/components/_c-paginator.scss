@@ -1,0 +1,17 @@
+.c-paginator {
+    position: relative;
+
+  &__spinner {
+      position: absolute;
+      bottom: 12px;
+      left: 8px;
+
+      &--hidden {
+          display: none;
+      }
+  }
+
+  &__paginator {
+      flex: 1 0 auto;
+  }
+}

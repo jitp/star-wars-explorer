@@ -1,4 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+// SETTINGS
+@import "~bootstrap/scss/functions";
+@import "styles/settings/variables";
+@import "~bootstrap/scss/variables";
+@import "styles/settings/theme";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// TOOLS
+@import "~bootstrap/scss/mixins";
+
+// GENERIC
+@import "~bootstrap/scss/reboot";
+@import "styles/generic/reboot";
+@import "styles/generic/theming";
+
+// ELEMENTS
+
+// OBJECTS
+@import "~bootstrap/scss/grid";
+
+// COMPONENTS
+@import "styles/components/c-sidenav";
+@import "styles/components/c-services";
+@import "styles/components/c-paginator";
+@import "styles/components/c-list";
+
+// UTILITIES
+@import "~bootstrap/scss/utilities";
+@import "styles/utilities/utilities";
