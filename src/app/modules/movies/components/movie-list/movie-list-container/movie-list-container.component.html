@@ -1,0 +1,20 @@
+<div class="h-100 d-flex flex-column">
+  <app-movie-list-presentational
+    [movies]="(movies$ | async)!"
+    (movie)="onMovie($event)"
+    class="flex-grow"
+  ></app-movie-list-presentational>
+  <div class="c-paginator">
+    <div class="c-paginator__spinner" *ngIf="loading$ | async">
+      <mat-spinner [diameter]="32"></mat-spinner>
+    </div>
+    <mat-paginator
+      [hidePageSize]="true"
+      [pageSize]="10"
+      [length]="total$ | async"
+      [disabled]="paginatorDisabled$ | async"
+      (page)="onPageChange($event)"
+      class="c-paginator__paginator"
+    ></mat-paginator>
+  </div>
+</div>

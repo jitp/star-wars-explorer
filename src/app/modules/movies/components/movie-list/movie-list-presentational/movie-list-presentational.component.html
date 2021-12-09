@@ -1,0 +1,10 @@
+<mat-list class="c-list">
+  <mat-list-item
+    *ngFor="let movie of movies"
+    class="c-list__item"
+    (click)="clickedMovie.emit(movie)"
+  >
+    <img matListAvatar alt="avatar" src="./assets/images/avatar.png" />
+    <h3 matLine>{{ movie?.title }}</h3>
+  </mat-list-item>
+</mat-list>

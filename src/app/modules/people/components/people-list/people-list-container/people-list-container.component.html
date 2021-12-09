@@ -1,0 +1,25 @@
+<div class="h-100 d-flex flex-column">
+  <app-people-list-presentational
+    [persons]="(persons$ | async)!"
+    (person)="onPerson($event)"
+    class="flex-grow"
+  ></app-people-list-presentational>
+
+  <div class="c-paginator">
+    <div
+      class="c-paginator__spinner"
+      [class.c-paginator__spinner--hidden]="(loading$ | async) === false"
+    >
+      <mat-spinner color="primary" [diameter]="32"></mat-spinner>
+    </div>
+
+    <mat-paginator
+      [hidePageSize]="true"
+      [pageSize]="10"
+      [length]="total$ | async"
+      [disabled]="paginatorDisabled$ | async"
+      (page)="onPageChange($event)"
+      class="c-paginator__paginator"
+    ></mat-paginator>
+  </div>
+</div>

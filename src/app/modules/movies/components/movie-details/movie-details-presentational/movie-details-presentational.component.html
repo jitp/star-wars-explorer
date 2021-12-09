@@ -1,0 +1,24 @@
+<h1>{{ movie?.title }}</h1>
+
+<div class="c-movie-details__fields">
+  <div>
+    <mat-form-field>
+      <mat-label>Director</mat-label>
+      <input matInput readonly [value]="movie?.director" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Producer</mat-label>
+      <input matInput readonly [value]="movie?.producer" />
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field>
+      <mat-label>Release date</mat-label>
+      <input matInput readonly [value]="movie?.release_date" />
+    </mat-form-field>
+  </div>
+</div>
