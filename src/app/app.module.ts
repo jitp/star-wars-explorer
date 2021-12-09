@@ -11,7 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './layout';
+import { HeaderComponent, SidenavComponent } from './layout';
 import { HomeComponent } from './pages';
 
 const materialModules = [
@@ -24,7 +24,12 @@ const materialModules = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    SidenavComponent,
+  ],
   imports: [
     BrowserModule,
     CoreModule,
